@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Vodka Premium | Notícias, Ofertas e Curiosidades sobre Vodka</title>
+  <meta name="description" content="Descubra as últimas notícias, ofertas exclusivas e curiosidades sobre vodka premium. Promoções especiais e dicas para harmonizar sua vodka favorita." />
+  <meta name="keywords" content="vodka, vodka premium, notícias vodka, ofertas vodka, promoções vodka, harmonização vodka" />
+  <meta name="author" content="Seu Nome ou Sua Empresa" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph para redes sociais -->
+  <meta property="og:title" content="Vodka Premium | Notícias, Ofertas e Curiosidades" />
+  <meta property="og:description" content="Fique por dentro das últimas novidades e promoções do mundo da vodka premium." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://seudominio.com/vodka-premium" />
+  <meta property="og:image" content="https://seudominio.com/imagens/vodka-premium.jpg" />
+  <title>Vodka Premium - Notícias e Ofertas</title>
+  <style>
+    /* Reset básico */
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f4f9;
+      color: #222;
+    }
+
+    header {
+      background-color: #222;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+
+    section.news {
+      background: white;
+      padding: 20px;
+      margin-bottom: 25px;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+
+    section.news h2 {
+      color: #a32f2f;
+      margin-bottom: 12px;
+    }
+
+    section.news p {
+      line-height: 1.5;
+    }
+
+    /* Propaganda comum */
+    .ad {
+      position: fixed;
+      background-color: #a32f2f;
+      color: white;
+      font-weight: bold;
+      padding: 15px;
+      width: 160px;
+      text-align: center;
+      border-radius: 8px;
+      font-size: 1rem;
+      box-shadow: 0 0 8px rgba(0,0,0,0.3);
+      animation: pulse 2s infinite alternate;
+      z-index: 9999;
+    }
+
+    /* Animação de leve pulsar */
+    @keyframes pulse {
+      0% { opacity: 1; }
+      100% { opacity: 0.7; }
+    }
+
+    .ad.left {
+      top: 30%;
+      left: 10px;
+    }
+
+    .ad.right {
+      top: 30%;
+      right: 10px;
+    }
+
+    /* Propagandas mobile fixas em cima e embaixo */
+    .ad-mobile-top,
+    .ad-mobile-bottom {
+      position: fixed;
+      width: 100%;
+      background-color: #a32f2f;
+      color: white;
+      font-weight: bold;
+      padding: 15px;
+      text-align: center;
+      font-size: 1rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+      z-index: 9999;
+      animation: pulse 2s infinite alternate;
+      display: none;
+    }
+
+    .ad-mobile-top {
+      top: 0;
+      left: 0;
+    }
+
+    .ad-mobile-bottom {
+      bottom: 0;
+      left: 0;
+    }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+      /* Esconde propagandas laterais */
+      .ad.left,
+      .ad.right {
+        display: none;
+      }
+      /* Mostra as propagandas no topo e rodapé */
+      .ad-mobile-top,
+      .ad-mobile-bottom {
+        display: block;
+      }
+
+      main {
+        padding-top: 70px; /* Espaço para propaganda fixa no topo */
+        padding-bottom: 70px; /* Espaço para propaganda fixa no rodapé */
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  Vodka Premium - Notícias e Ofertas Exclusivas
+</header>
+
+<!-- Propagandas laterais para desktop -->
+<div class="ad left">VOCÊ QUER COLOCA PROPAGANDA DA SUA LOJA AQUI ENTRE EM CONTATO<br> ANUNCIAMOS SUA EMPRESA VALOR FIXO 3MILR$
+        WHATSAPP 27 99986-0405 OU SMS 
+        <a href="https://wa.me/5527999860405" target="_blank">Chamar no WhatsApp</a></div>
+
+<div class="ad right">SUA PROPAGANDA AQUI<br></div>
+
+<!-- Propagandas para mobile -->
+<div class="ad-mobile-top"> ANUNCIAMOS SUA EMPRESA VALOR FIXO 3MILR$
+        WHATSAPP 27 99986-0405 OU SMS 
+        <a href="https://wa.me/5527999860405" target="_blank">Chamar no WhatsApp</a></div>
+<div class="ad-mobile-bottom">SUA PROPAGANDA AQUI!</div>
+
+<main id="news-container">
+  <!-- Notícias serão inseridas aqui pelo JavaScript -->
+</main>
+
+<script>
+  // Array com as notícias
+  const noticias = [
+    {
+      titulo: "Novidades no mundo da Vodka",
+      texto: "A vodka é uma das bebidas alcoólicas mais consumidas no mundo. Recentemente, surgiram novos rótulos com sabores exóticos, feitos com ingredientes naturais e processos artesanais. Prepare-se para experimentar uma nova experiência!"
+    },
+    {
+      titulo: "Lançamento: Vodka Orgânica",
+      texto: "Uma nova linha de vodka orgânica chegou ao mercado com promessa de sabor puro e ingredientes 100% naturais. Ideal para quem busca qualidade sem agrotóxicos e processos sustentáveis."
+    },
+    {
+      titulo: "Dicas para Harmonização",
+      texto: "Quer saber como harmonizar vodka com pratos diversos? Experimente com sushi, pratos picantes e até sobremesas cítricas. A vodka realça sabores sem dominar o paladar."
+    },
+    {
+      titulo: "Notícias do Mercado",
+      texto: "O mercado global de vodka está crescendo 7% ao ano, impulsionado pelo aumento no interesse por coquetéis e consumo consciente. Investidores estão atentos às novas tendências."
+    }
+  ];
+
+  // Referência ao container das notícias
+  const container = document.getElementById('news-container');
+
+  // Função para renderizar notícias
+  function renderNoticias() {
+    noticias.forEach(({ titulo, texto }) => {
+      const section = document.createElement('section');
+      section.className = 'news';
+
+      const h2 = document.createElement('h2');
+      h2.textContent = titulo;
+
+      const p = document.createElement('p');
+      p.textContent = texto;
+
+      section.appendChild(h2);
+      section.appendChild(p);
+
+      container.appendChild(section);
+    });
+  }
+
+  // Renderiza ao carregar
+  renderNoticias();
+</script>
+
+</body>
+</html>
